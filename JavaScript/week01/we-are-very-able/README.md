@@ -8,13 +8,13 @@ Welcome to your first test-based assignment! You're gonna love it once you get t
 
 You'll:
 
-- Create and clone a new repo.
+- Create a new repo.
 - Copy assignment files into your new local repo.
 - Navigate into the directory.
 - Run `npm install -g mocha`. 
-- Run `mocha -w main.test.js`.
+- Run `npm test`.
 - Write your code in the section below "YOUR CODE BELOW" in `main.js`.
-- Watch as your tests turn green.
+- Watch as your tests start to pass.
 - Add a link to your repo as your assignment submission when you're done!
 
 ### Guidelines
