@@ -18,8 +18,6 @@ This is a test-based challenge, similar to many we've done before, but here's th
 
 ### Challenges
 
-**See `main.test.js` (or your `jest --watch-all` terminal) for full examples of expected output given certain inputs.**
-
 
 1. `getFirstItemFrom`: takes in an array as a parameter and returns the first item from that array.
 
