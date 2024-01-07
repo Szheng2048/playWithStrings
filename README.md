@@ -47,19 +47,19 @@ Your task is to write a series of functions that execute the following tasks:
   * Examples:
     * truncate('The fault, dear Brutus, is not in our stars, but in ourselves.') -> 'The fault, dear...'
     * truncate("Well, that's just, like, your opinion man.") -> "Well, that's ju..."
-* `ciEmailify` - creates an email from a two-part name
+* `emailify` - creates an email from a two-part name
   * Examples:
-    * ciEmailify('colin jaffe') -> 'colin.jaffe@codeimmersives.com'
-    * ciEmailify('Anthony DeRosa') -> 'anthony.derosa@codeimmersives.com'
+    * emailify('kyle rose') -> 'krose.prsvr@gmail.com'
+    * emailify('Jason Doty') -> 'jdoty.prsvr@gmail.com'
 * `reverse` - reverses the given string
   * Examples:
-    * reverse('colin') -> 'niloc'
-    * reverse('mesuara') -> 'arausem'
+    * reverse('kyle') -> 'elyk'
+    * reverse('rose') -> 'esor'
 * `onlyVowels` - returns only the vowels from a word
   * Examples:
-    * onlyVowels('Colin Jaffe') -> 'oiae'
+    * onlyVowels('Kyle Rose') -> 'eoe'
     * onlyVowels('quickly') -> 'ui'
-    * onlyVowels('Anthony DeRosa') -> 'Aoeoa'
+    * onlyVowels('Jason Doty') -> 'aoo'
 
 ## Extra stretch goals
 
@@ -71,7 +71,7 @@ Your task is to write a series of functions that execute the following tasks:
 * `titleCase` - returns a transformed version of the given string where every word starts with a capital letter and every non-word-starting letter is lowercased
   * Examples:
     * titleCase('return of the king') -> 'Return Of The King'
-    * titleCase('cOde iMMerSives') -> 'Code Immersives'
+    * titleCase('peRseVere CODe') -> 'Persevere Code'
 * `camelCase` - returns the given string in camel case
   * Examples:
     * camelCase('oh Hello') -> 'ohHello'

@@ -7,7 +7,7 @@ const {
   exclaim,
   repeatIt,
   truncate,
-  ciEmailify,
+  emailify,
   reverse,
   onlyVowels,
   crazyCase,
@@ -109,15 +109,15 @@ describe('truncate', () => {
   });
 });
 
-describe('ciEmailify', () => {
+describe('emailify', () => {
   it(`creates an email from a two-part name`, () => {
-    assert.strictEqual(ciEmailify('kyle rose'), 'kyle.rose@perseverenow.org');
-    assert.strictEqual(ciEmailify('jason doty'), 'jason.doty@perseverenow.org');
+    assert.strictEqual(emailify('kyle rose'), 'krose.prsvr@gmail.com');
+    assert.strictEqual(emailify('jason doty'), 'jdoty.prsvr@gmail.com');
   });
 
   it(`handles uppercased names`, () => {
-    assert.strictEqual(ciEmailify('kyle Rose'), 'kyle.rose@perseverenow.org');
-    assert.strictEqual(ciEmailify('jason Doty'), 'jason.doty@perseverenow.org');
+    assert.strictEqual(emailify('kyle Rose'), 'krose.prsvr@gmail.com');
+    assert.strictEqual(emailify('jason Doty'), 'jdoty.prsvr@gmail.com');
   });
 });
 
