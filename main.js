@@ -110,16 +110,51 @@ function crazyCase(str){
   return newstr
 }
 function titleCase(str){
-  arr = [0]
-  for(let i = 0 ; i < str.length; i ++){
-    if(str[i]=== " "){
-      arr.push(i + 1)
+  let newstr = str[0].toUpperCase()
+  
+  for(let i = 1; i < str.length;i++){
+    if(str[i-1]=== " "){
+      newstr = newstr + str[i].toUpperCase()
+    } else {
+      newstr = newstr + str[i].toLowerCase()
     }
   }
-  for(let num of arr){
-    str[num].toUpperCase()
-  }
+  return newstr
 }
+
+function camelCase(str){
+  let str1 = "b" + str
+  let str2 = titleCase(str1)
+  let str3 = ""
+  for (let i = 1; i < str2.length; i++){
+    if(str2[i]=== " "){
+      str3 = str3
+    } else {
+      str3 = str3 + str2[i]
+    }
+  }
+  return str3
+}
+
+function crazyCase2ReturnOfCrazyCase(str){
+  newstr = ""
+  count = 1
+
+  for(let i = 0;i < str.length; i++){
+    if(str[i]=== " "){
+      count ++
+    }
+    if(count % 2 !== 0){
+      newstr = newstr + str[i].toLowerCase()
+      count ++
+    } else {
+      newstr = newstr + str[i].toUpperCase()
+      count ++
+    }
+  }
+  return newstr
+}
+
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
